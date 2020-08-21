@@ -1,0 +1,208 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script type="text/javascript"> 
+        function display_c(){
+            mytime=setTimeout('display_time()',1000);
+        }
+    </script>
+    <title> J S Sunil </title>
+</head>
+<body onload=display_time() class="body" id="body">
+    <header class="main-header">
+        <div class="header">
+            <img src="images/theme-config.svg" style="height: 30px;" alt="">
+            <div>
+                <span id="dateAndTime" style="color: white;"></span>
+            </div>
+            <img class="power-icon" src="images/profile.jpg" alt="" onclick="showControlPanel()">
+        </div>
+    </header>
+    <main class="main">
+        <div id="controlPanel" class="control-panel">
+            <div class="control-panel-div" id="control-panel-div">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <button class="control-panel-buttons" onclick="restart()"> restart </button>
+                    </li>
+                    <li>
+                        <button class="control-panel-buttons" onclick="shutDown()"> shutdown </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img class="readme-icon" src="images/readme.png" alt="" onclick="showPdf()">
+        </div>
+        <div style="padding-left: 8px; color: lightgray;">
+            Readme
+        </div>
+        <div>
+            <img src="images/dustbin.svg" alt="" style="height: 60px; padding-top: 30px;">
+        </div>
+        <div  style="padding-left: 10px; color: lightgray;">
+            Trash
+        </div>
+        <div id="pdfViewer" class="pdf-viewer">
+            <img src="images/pdf_header.png" alt="" onclick="hidePdf()" style="width: 100%;">
+            <div class="pdf-content">
+                <div>
+                    <img src="images/profile.jpg" alt="" style="height: 150px; width: 140px; border-radius: 50%;">
+                </div>
+                <div>
+                    <h2> J S Sunil </h2>
+                </div>
+                <div>
+                    <h4> Think twice code once &#128524; </h4>
+                </div>
+                <div>
+                    A big hello to all the creative souls out there.
+                    I am J S Sunil and it's quite an exquisite opportunity to be here and beyond thrilled to join this very bunch of talent and innovation.
+
+                    <section>
+                        <h3> Want to know more?  </h3>
+                        <p>
+                            Well..let me walk you through things I love .. 
+
+                            I enjoy expressing myself creatively through cooking and comedy.
+
+                            I feel extremely responsible to quote myself a self proclaimed environmentalist.
+
+                            My favorite pastime is to code! Yes you heard it right. I code when I am happy when I am sad when I am confused when I am excited...it's been quite a part of my life since the last 4 years when I joined IIIT Sricity
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3> What helped me land in Thought Works? </h3>
+                        <p>
+                            So..as it came across. I am CSE btech graduate 2020 from the Indian institute of information technology Sricity.
+
+                            I would place myself in a spot where the person is hard working , enthusiastic and motivated individual towards exploring and learning new technologies.
+
+                            I also hold decent knowledge and hands-on experience in the field of software engineering, IoT, python, c, c++, java and many more...
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h3> Well I have got something big to share.. Exicted? </h3>
+                        <p>
+                            To conclude ..I have something huge in my bag. I recently managed to add a feather to my cap - where my research paper on advisory framework to interconnect distributed water bodies targeting agricultural farms  seeked it's acceptance by the ACIT 2020,Germany conference.
+
+                            I owe this achievement to my mentors and my institution and my partner.
+
+                            I am blessed never before than today to present you my work and introduce myself in this innovation space. 
+                            All set to start my incredible journey at Thought Works.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3> Let's together make this world a better place </h3>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="browser">
+            <div class="row">
+              <div class="column left" onclick="closeBrowser()">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+              </div>
+              <div class="column middle">
+                <input type="text" value="How to sleep 8hours in 1hour">
+              </div>
+              <div class="column right">
+                <div style="float:right">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="content">
+              <h3>Oops!!</h3>
+              <p>404 not found</p>
+            </div>
+        </div>
+        <div id="file" class="file-system">
+            <div class="row">
+                <div class="column left" onclick="closeFile()">
+                  <span class="dot" style="background:#ED594A;"></span>
+                  <span class="dot" style="background:#FDD800;"></span>
+                  <span class="dot" style="background:#5AC05A;"></span>
+                </div>
+                <div class="column middle" id="windowName">
+                  <input class="window-name" type="text" value="Home" disabled>
+                </div>
+                <div class="column right">
+                  <div style="float:right">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; height: 50vh;">
+                <div class="btn-group" style="display: flex; flex-direction: column;">
+                    <div class="button active" onclick="home()" id="homeButton"> Home </div>
+                    <div class="button" onclick="desktop()" id="desktopButton"> Desktop </div>
+                    <div class="button"> Documents </div>
+                    <div class="button"> Downloads </div>
+                    <div class="button"> Trash </div>
+                </div>
+                <div class="home" id="Home">
+                    <div style="display: flex; flex-direction: column;">
+                        <img src="images/folder.svg" alt="" style="height: 50px;" onclick="desktop()">
+                        Desktop
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <img src="images/folder.svg" alt="" style="height: 50px;">
+                        Documents
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <img src="images/folder.svg" alt="" style="height: 50px;">
+                        Downloads
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <img src="images/folder.svg" alt="" style="height: 50px;" onclick="projects()">
+                        Projects
+                    </div>
+                </div>
+                <div id="Desktop" class="desktop">
+                    <div style="display: flex; flex-direction: column;">
+                        <img class="readme-icon" src="images/readme.png" alt="" onclick="showDesktopPdf()">
+                        Readme
+                    </div>
+                </div>
+                <div id="Projects" class="projects">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; cursor: pointer;">
+                            <div style="display: flex; align-items: center;" onclick="next()">
+                                &lt;
+                            </div>
+                            <div style="display: flex; left: 5vw; position: relative; height: 30vh; width: 22vw;">
+                                <img id="carouselImage" src="" alt="" style="height: 100%; width: 100%;">
+                            </div>
+                            <div style="display: flex; left: 11vw; position: relative; align-items: center; cursor: pointer;" onclick="prev()">
+                                &gt;
+                            </div>
+                        </div>
+                        <div style="display: flex; height: 100%; align-items: center; width: 100%; padding-left: 4vw;">
+                            <a id="linkProject" href="" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bottom-panel">
+            <img src="images/brave.svg" alt="" onclick="openBrowser()">
+            <img src="images/file-manager.svg" alt="" onclick="openFile()">
+            <img src="images/sublime-text.png" alt="">
+            <img src="images/code.png" alt="">
+            <img src="images/terminal.svg" alt="">
+        </div>
+    </footer>
+</body>
