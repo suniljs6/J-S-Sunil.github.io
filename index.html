@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
     <script type="text/javascript"> 
         function display_c(){
@@ -34,13 +35,13 @@
         <div>
             <img class="readme-icon" src="images/readme.png" alt="" onclick="showPdf()">
         </div>
-        <div style="padding-left: 8px; color: lightgray;">
+        <div class="readme-title">
             Readme
         </div>
         <div>
-            <img src="images/dustbin.svg" alt="" style="height: 60px; padding-top: 30px;">
+            <img src="images/dustbin.svg" alt="" class="trash-icon">
         </div>
-        <div  style="padding-left: 10px; color: lightgray;">
+        <div  class="trash-titile">
             Trash
         </div>
         <div id="pdfViewer" class="pdf-viewer">
@@ -152,25 +153,25 @@
                     <div class="button"> Trash </div>
                 </div>
                 <div class="home" id="Home">
-                    <div style="display: flex; flex-direction: column;">
-                        <img src="images/folder.svg" alt="" style="height: 50px;" onclick="desktop()">
+                    <div class="home-icons">
+                        <img src="images/folder.svg" alt="" onclick="desktop()">
                         Desktop
                     </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <img src="images/folder.svg" alt="" style="height: 50px;">
+                    <div class="home-icons">
+                        <img src="images/folder.svg" alt="">
                         Documents
                     </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <img src="images/folder.svg" alt="" style="height: 50px;">
+                    <div class="home-icons">
+                        <img src="images/folder.svg" alt="">
                         Downloads
                     </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <img src="images/folder.svg" alt="" style="height: 50px;" onclick="projects()">
+                    <div class="home-icons">
+                        <img src="images/folder.svg" alt="" onclick="projects()">
                         Projects
                     </div>
                 </div>
                 <div id="Desktop" class="desktop">
-                    <div style="display: flex; flex-direction: column;">
+                    <div class="home-icons">
                         <img class="readme-icon" src="images/readme.png" alt="" onclick="showDesktopPdf()">
                         Readme
                     </div>
