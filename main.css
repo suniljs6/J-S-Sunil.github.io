@@ -199,6 +199,7 @@ input[type=text] {
 
 .content {
     padding: 10px;
+    background-color: whitesmoke;
 }
 .file-system {
     border: 3px solid #f1f1f1;
