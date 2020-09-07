@@ -179,17 +179,17 @@
                 <div id="Projects" class="projects">
                     <div style="display: flex; flex-direction: column;">
                         <div style="display: flex; flex-direction: row; cursor: pointer;">
-                            <div style="display: flex; align-items: center;" onclick="next()">
+                            <div class="prev" onclick="next()">
                                 &lt;
                             </div>
-                            <div style="display: flex; left: 5vw; position: relative; height: 30vh; width: 22vw;">
-                                <img id="carouselImage" src="" alt="" style="height: 100%; width: 100%;">
+                            <div class="project-content">
+                                <img id="carouselImage" src="" alt="">
                             </div>
-                            <div style="display: flex; left: 11vw; position: relative; align-items: center; cursor: pointer;" onclick="prev()">
+                            <div class="next" onclick="prev()">
                                 &gt;
                             </div>
                         </div>
-                        <div style="display: flex; height: 100%; align-items: center; width: 100%; padding-left: 4vw;">
+                        <div class="project-link">
                             <a id="linkProject" href="" target="_blank"></a>
                         </div>
                     </div>

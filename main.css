@@ -14,6 +14,10 @@
         background-size: calc(100vw - 10vw) calc(100vh - 5vh);
         background-position: calc(35vw - 30vw) calc(35vh - 32vh);
     }
+    .file-system {
+        left: 6% !important;
+        width: 82% !important;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -148,15 +152,15 @@ body {
 }
 
 .left {
-    width: 15%;
+    width: 25%;
 }
 
 .right {
-    width: 10%;
+    width: 1%;
 }
 
 .middle {
-    width: 75%;
+    width: 74%;
 }
 
 .row:after {
@@ -283,4 +287,35 @@ input[type=text] {
     width: 100%;
     gap: 3vw;
     flex-flow: wrap;
+}
+.next {
+    display: flex;
+    left: 21%;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    width: 1%;
+}
+.prev {
+    display: flex;
+    align-items: center;
+    width: 1%;
+}
+.project-content  {
+    display: flex;
+    left: 12%;
+    position: relative;
+    height: 100%;
+    width: 80%;
+}
+.project-content img {
+    height: 100%;
+    width: 100%;
+}
+.project-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    padding-left: 4vw;
 }
