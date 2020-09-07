@@ -90,12 +90,12 @@ img {
 }
 .pdf-viewer {
     position: fixed;
-    top: 47%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    height: 70vh;
-    width: 50vw;
+    height: 70%;
+    width: 74%;
 }
 .control-panel {
     display: flex;
@@ -210,6 +210,14 @@ input[type=text] {
     position: fixed;
     display: none;
 }
+
+.file-content {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+}
+
 .window-name {
     font-weight: bold;
     font-size: 15px;
@@ -274,9 +282,10 @@ input[type=text] {
     flex-direction: row;
     padding: 15px;
     background: whitesmoke;
-    width: 100%;
+    width: inherit;
     gap: 3vw;
     flex-flow: wrap;
+    overflow: hidden;
 }
 
 .projects {
